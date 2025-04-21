@@ -33,25 +33,17 @@ public class Part1 {
 
 // 1. Overflow Example.
 class OverflowExample {
-    public static void run(Scanner scanner) throws Exception {
-        System.out.println("[OverflowExample]");
+    public static void run(Scanner scanner) {
+        System.out.println("[Overflow Example]");
 
-        int x = 0;
-        int y = 0;
-
-        // Input two integers.
         try {
+            // Input two integers.
             System.out.print("First Input (Integer): ");
-            x = scanner.nextInt();
+            int x = scanner.nextInt();
             System.out.print("Second Input (Integer): ");
-            y = scanner.nextInt();
-        }
-        catch (InputMismatchException e) {
-            throw e;
-        }
+            int y = scanner.nextInt();
 
-        // Sum two integers.
-        try {
+            // Sum two integers.
             int result = Math.addExact(x, y);
             System.out.printf("Result: %d + %d = %d\n", x, y, result);
             System.out.println(
@@ -61,7 +53,7 @@ class OverflowExample {
                 )
             );
         }
-        catch(ArithmeticException e){
+        catch (InputMismatchException | ArithmeticException e) {
             throw e;
         }
 
@@ -72,8 +64,8 @@ class OverflowExample {
 
 // 2. Retry Invalid Input Example.
 class RetryInvalidInputExample {
-    public static void run(Scanner scanner) throws Exception {
-        System.out.println("[RetryInvalidInputExample]");
+    public static void run(Scanner scanner) {
+        System.out.println("[Retry Invalid Input Example]");
 
         int x = 0;
         int y = 0;

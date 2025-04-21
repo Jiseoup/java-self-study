@@ -23,7 +23,7 @@ import java.io.InputStreamReader;
 
 
 public class Part2 {
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
         try {
             IOExample.runScanner();
             IOExample.runBufferedReader();
@@ -31,15 +31,12 @@ public class Part2 {
         }
         catch (IOException e) {
             System.out.println("Input error: " + e.getMessage());
-            throw e;
         }
         catch (NumberFormatException e) {
             System.out.println("Invalid number format.");
-            throw e;
         }
         catch (Exception e) {
             System.out.println("Unexpected Error: " + e.getMessage());
-            throw e;
         }
     }
 }
@@ -47,7 +44,7 @@ public class Part2 {
 
 class IOExample {
     // 1. Scanner Example.
-    public static void runScanner() {
+    public static void runScanner() throws Exception {
         System.out.println("[Scannner Example]");
 
         @SuppressWarnings("resource")
@@ -64,7 +61,7 @@ class IOExample {
         System.out.printf("[OutPut]\n(1) %d\n(2) %s\n(3) %s\n", x, y, z);
         System.out.println("-----------------------------------------");
 
-        // Empty Buffer.
+        // Clear buffer.
         scanner.nextLine();
 
         // Example of `nextLine()` method.
@@ -74,6 +71,7 @@ class IOExample {
         String b = scanner.nextLine();
 
         System.out.printf("[OutPut]\n(1) %s\n(2) %s\n", a, b);
+        System.out.println();
     }
 
     // 2. BufferedReader Example.
@@ -83,18 +81,14 @@ class IOExample {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
         // I/O examples with BufferedReader.
-        try {
-            System.out.print("Enter the item: ");
-            String item = br.readLine();
+        System.out.print("Enter the item: ");
+        String item = br.readLine();
 
-            System.out.print("Enter the amount: ");
-            int amount = Integer.parseInt(br.readLine());
+        System.out.print("Enter the amount: ");
+        int amount = Integer.parseInt(br.readLine());
 
-            System.out.printf("[My Order]\n%s x %d\n", item, amount);
-        }
-        catch (Exception e) {
-            throw e;
-        }
+        System.out.printf("[My Order]\n%s x %d\n", item, amount);
+        System.out.println();
     }
 
     // 3. StringTokenizer Example.
@@ -102,19 +96,15 @@ class IOExample {
         System.out.println("[StringTokenizer Example]");
 
         // I/O examples with BufferedReader and StringTokenizer.
-        try {
-            BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-            System.out.print("Input two words separated by a hypen(-): ");
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        System.out.print("Input two words separated by a hypen(-): ");
 
-            // Read a line of input and split it by the hyphen delimiter.
-            StringTokenizer st = new StringTokenizer(br.readLine(), "-");
-            String firstWord = st.nextToken();
-            String secondWord = st.nextToken();
+        // Read a line of input and split it by the hyphen delimiter.
+        StringTokenizer st = new StringTokenizer(br.readLine(), "-");
+        String firstWord = st.nextToken();
+        String secondWord = st.nextToken();
 
-            System.out.printf("[Split the words]\n%s / %s\n", firstWord, secondWord);
-        }
-        catch (Exception e) {
-            throw e;
-        }
+        System.out.printf("[Split the words]\n%s / %s\n", firstWord, secondWord);
+        System.out.println();
     }
 }
