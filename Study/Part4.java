@@ -31,7 +31,7 @@ class SortingExample {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         System.out.print("Input five integers separated by a comma(,): ");
 
-        // Input data to the array.
+        // Input data into the array.
         StringTokenizer st = new StringTokenizer(br.readLine(), ",");
         int[] myArray = new int[5];
         for (int i = 0; i < myArray.length; i++) {
