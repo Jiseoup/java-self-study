@@ -1,4 +1,6 @@
-// Part 4. 오름차순 정렬 vs 내림차순 정렬
+// Part 4. 오름차순(ASC) 정렬 vs 내림차순(DESC) 정렬
+
+// sort : 정렬 기준이 한 개일 때 사용.
 
 package Study;
 
