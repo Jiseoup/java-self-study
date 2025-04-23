@@ -153,12 +153,10 @@ class ListType {
 
 
 class Edge {
-    int startNode;
     int endNode;
     int weight;
 
-    public Edge(int startNode, int endNode, int weight) {
-        this.startNode = startNode;
+    public Edge(int endNode, int weight) {
         this.endNode = endNode;
         this.weight = weight;
     }
@@ -180,24 +178,24 @@ class AdjacencyList {
 
     // Add Not Directed & Not Weighted Edge.
     public void addEdge(int startNode, int endNode) {
-        list[startNode].add(new Edge(startNode, endNode, 1));
-        list[endNode].add(new Edge(endNode, startNode, 1));
+        list[startNode].add(new Edge(endNode, 1));
+        list[endNode].add(new Edge(startNode, 1));
     }
 
     // Add Directed & Not Weighted Edge.
     public void addDirectedEdge(int startNode, int endNode) {
-        list[startNode].add(new Edge(startNode, endNode, 1));
+        list[startNode].add(new Edge(endNode, 1));
     }
 
     // Add Not Directed & Weighted Edge.
     public void addWeightedEdge(int startNode, int endNode, int weight) {
-        list[startNode].add(new Edge(startNode, endNode, weight));
-        list[endNode].add(new Edge(endNode, startNode, weight));
+        list[startNode].add(new Edge(endNode, weight));
+        list[endNode].add(new Edge(startNode, weight));
     }
 
     // Add Directed & Weighted Edge.
     public void addDirectedWeightedEdge(int startNode, int endNode, int weight) {
-        list[startNode].add(new Edge(startNode, endNode, weight));
+        list[startNode].add(new Edge(endNode, weight));
     }
 
     // Print Adjacency List.
