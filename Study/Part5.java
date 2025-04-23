@@ -26,7 +26,7 @@ import java.util.Collections;
 public class Part5 {
     public static void main(String[] args) {
         try {
-            // ComparableExample.runFirstExample();
+            ComparableExample.runFirstExample();
             ComparableExample.runSecondExample();
         }
         catch (Exception e) {
