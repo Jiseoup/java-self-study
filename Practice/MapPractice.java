@@ -5,7 +5,7 @@ import java.util.HashMap;
 
 
 // Map 자료형을 활용해 무지개 색상 출력. 
-public class MapExample {
+public class MapPractice {
     public static void main(String[] args) {
         // Create HashMap.
         Map<Integer, String> rainbowColors = new HashMap<Integer, String>();

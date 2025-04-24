@@ -3,14 +3,14 @@ package Practice;
 import java.util.Arrays;
 
 
-public class SortExample {
+public class SortPractice {
     public static void main(String[] args) {
         arraySort();
     }
 
     // 배열의 합이 큰 순서대로 출력.
     private static void arraySort() {
-        System.out.println("[<Array Sort Example]\n");
+        System.out.println("[<Array Sort Practice]");
 
         // Define example array.
         int[][] array = {

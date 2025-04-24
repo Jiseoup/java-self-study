@@ -8,7 +8,7 @@ import java.util.Scanner;
 
 
 // 입력한 기준보다 적은 수의 과일을 내림차순 정렬하여 출력.
-public class StreamExample {
+public class StreamPractice {
     public static void main(String[] args) {
         @SuppressWarnings("resource")
         Scanner sc = new Scanner(System.in);
