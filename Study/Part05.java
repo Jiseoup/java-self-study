@@ -15,7 +15,7 @@
  *  3. 생일과 이름이 모두 같을 경우, 직업 순서대로 정렬. (알파벳 순)
  */
 
-package Study.YoutubeStudy;
+package Study;
 
 import java.time.Period;
 import java.time.LocalDate;

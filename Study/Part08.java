@@ -1,6 +1,6 @@
 // Part 8. if vs switch
 
-package Study.YoutubeStudy;
+package Study;
 
 import java.util.ArrayList;
 import java.util.Scanner;

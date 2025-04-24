@@ -3,7 +3,7 @@
 // 정적 변수는 클래스 로딩 시, 메모리에 한 번만 할당함.
 // 즉, 클래스의 모든 인스턴스가 해당 변수를 공유함.
 
-package Study.YoutubeStudy;
+package Study;
 
 
 public class Part06 {

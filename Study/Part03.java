@@ -3,7 +3,7 @@
 // 전위연산자 (++i) : i 변수의 증감 이후, 다른 연산을 수행.
 // 후위연산자 (i++) : 다른 연산을 먼저 수행한 후, i 변수를 증감.
 
-package Study.YoutubeStudy;
+package Study;
 
 
 public class Part03 {

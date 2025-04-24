@@ -11,7 +11,7 @@
  *  Example> (A + B) % C = ((A % C) + (B % C)) % C
  */
 
-package Study.YoutubeStudy;
+package Study;
 
 
 public class Part09 {

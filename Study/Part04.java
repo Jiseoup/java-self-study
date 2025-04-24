@@ -2,7 +2,7 @@
 
 // sort : 정렬 기준이 한 개일 때 사용.
 
-package Study.YoutubeStudy;
+package Study;
 
 import java.util.Scanner;
 import java.util.Arrays;

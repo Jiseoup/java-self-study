@@ -13,7 +13,7 @@
  *  https://github.com/Jiseoup/java-self-study/blob/main/Images/DIRECTED_AND_WEIGHTED_GRAPH.png
  */
 
-package Study.YoutubeStudy;
+package Study;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;

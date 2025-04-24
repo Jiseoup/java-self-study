@@ -12,9 +12,10 @@
 ## 🧱 프로젝트 구성
 | 카테고리 | 설명 |
 |----------|------|
-| `Study` | Java 기초 문법 학습 및 예제 정리 |
-| `Practice` | Java를 활용한 간단한 프로그램 및 실습 코드 작성 |
-| `CodingTest` | [Programmers](https://programmers.co.kr) 기반 코딩 테스트 문제 풀이 |
+| `Study` | Java 강의 시리즈를 학습하며 직접 구현한 실습 코드 모음 |
+| `Practice` | 유용한 함수와 자료구조 등을 중심으로 스스로 학습하고 정리한 실습 코드 모음 |
+| `CodingTest` | [Programmers](https://programmers.co.kr) 기반의 코딩 테스트 문제 풀이 코드 모음 |
+| `Images` | 프로젝트 관련 이미지 파일 저장소 |
 
 
 ## 🛠 개발 환경

@@ -1,4 +1,4 @@
-package Study;
+package Practice;
 
 import java.util.Arrays;
 
