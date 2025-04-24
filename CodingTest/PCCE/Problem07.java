@@ -2,7 +2,7 @@ package CodingTest.PCCE;
 
 import java.util.List;
 
-public class Problem7 {
+public class Problem07 {
     public static void main(String[] args) {
         // Examples
         List<TestCase> testCases = List.of(

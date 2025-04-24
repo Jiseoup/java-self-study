@@ -1,7 +1,7 @@
 package CodingTest.PCCE;
 
 
-public class Problem1 {
+public class Problem01 {
     public static void main(String[] args) {
         String msg = "Spring is beginning";
         int val1 = 3;

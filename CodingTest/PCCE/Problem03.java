@@ -3,7 +3,7 @@ package CodingTest.PCCE;
 import java.util.Scanner;
 
 
-public class Problem3 {
+public class Problem03 {
     public static void main(String[] args) {
         @SuppressWarnings("resource")
         Scanner sc = new Scanner(System.in);

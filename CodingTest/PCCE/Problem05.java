@@ -4,7 +4,7 @@ import java.util.Scanner;
 import java.util.Arrays;
 
 
-public class Problem5 {
+public class Problem05 {
     public static void main(String[] args) {
         @SuppressWarnings("resource")
         Scanner scanner = new Scanner(System.in);

@@ -3,7 +3,7 @@ package CodingTest.PCCE;
 import java.util.Arrays;
 
 
-public class Problem6 {
+public class Problem06 {
     public static void main(String[] args) {
         // Example 1
         int numbers1[] = {1};
