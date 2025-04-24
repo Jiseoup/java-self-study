@@ -9,7 +9,7 @@ import java.util.Scanner;
 import java.util.InputMismatchException;
 
 
-public class Part1 {
+public class Part01 {
     public static void main(String[] args) throws Exception {
         try (Scanner scanner = new Scanner(System.in)) {
             OverflowExample.run(scanner);

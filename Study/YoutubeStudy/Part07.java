@@ -11,7 +11,7 @@ import java.util.LinkedList;
 import java.util.Comparator;
 
 
-public class Part7 {
+public class Part07 {
     public static void main(String[] args) {
         try {
             LoopExample.runFor();

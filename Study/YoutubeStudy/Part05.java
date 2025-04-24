@@ -23,7 +23,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 
 
-public class Part5 {
+public class Part05 {
     public static void main(String[] args) {
         try {
             ComparableExample.runFirstExample();

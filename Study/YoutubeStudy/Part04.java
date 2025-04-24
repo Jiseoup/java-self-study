@@ -12,7 +12,7 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
 
-public class Part4 {
+public class Part04 {
     public static void main(String[] args) {
         try {
             SortingExample.runAscSort();

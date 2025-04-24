@@ -22,7 +22,7 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
 
-public class Part2 {
+public class Part02 {
     public static void main(String[] args) {
         try {
             IOExample.runScanner();

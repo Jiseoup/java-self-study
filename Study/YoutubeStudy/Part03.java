@@ -6,7 +6,7 @@
 package Study.YoutubeStudy;
 
 
-public class Part3 {
+public class Part03 {
     public static void main(String[] args) {
         try {
             OperatorExample.runPrefix();
