@@ -3,7 +3,7 @@
 // 코딩 테스트: 대체로 `long`이 더 좋음.
 // >> 문제의 답이나 풀이 과정에서 자료형의 범위를 넘어가는 경우가 종종 있기 때문.
 
-package Study;
+package Study.YoutubeStudy;
 
 import java.util.Scanner;
 import java.util.InputMismatchException;

@@ -1,6 +1,6 @@
 // Part 7. for vs while
 
-package Study;
+package Study.YoutubeStudy;
 
 import java.util.UUID;
 import java.util.Random;

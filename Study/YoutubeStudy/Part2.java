@@ -13,7 +13,7 @@
  *      - 개행 문자 포함하여 처리
  */
 
-package Study;
+package Study.YoutubeStudy;
 
 import java.util.Scanner;
 import java.util.StringTokenizer;
