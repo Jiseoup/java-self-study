@@ -1,4 +1,4 @@
-// [Lv.1] 가장 많이 받은 선물
+// [Lv.1] 같은 숫자는 싫어
 
 package CodingTest.HighScoreKit.StackQueue;
 

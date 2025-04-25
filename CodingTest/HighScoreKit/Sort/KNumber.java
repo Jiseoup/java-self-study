@@ -1,4 +1,4 @@
-// [Lv.1] 가장 많이 받은 선물
+// [Lv.1] K번째수
 
 package CodingTest.HighScoreKit.Sort;
 
