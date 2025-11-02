@@ -1,4 +1,4 @@
-// [Lv.0] 나이 출력
+// [Lv.0] 로그인 성공?
 
 package CodingTest.CodingTestIntro;
 
