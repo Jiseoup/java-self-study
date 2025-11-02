@@ -6,7 +6,6 @@ import java.util.List;
 import java.util.Random;
 import java.util.Scanner;
 
-
 // 입력한 기준보다 적은 수의 과일을 내림차순 정렬하여 출력.
 public class StreamPractice {
     public static void main(String[] args) {
@@ -31,12 +30,10 @@ public class StreamPractice {
         System.out.println();
 
         // Filter and sort(in descending order) fruits using stream method.
-        List<Fruit> newfruitList = (
-            fruitList.stream()
-            .filter(f -> f.quantity < input)
-            .sorted(Comparator.comparingInt((Fruit f) -> f.quantity).reversed())
-            .toList()
-        );
+        List<Fruit> newfruitList = (fruitList.stream()
+                .filter(f -> f.quantity < input)
+                .sorted(Comparator.comparingInt((Fruit f) -> f.quantity).reversed())
+                .toList());
 
         // Print filtered fruits.
         System.out.printf("[Fruits with a quantity less than %d]\n", input);
@@ -47,12 +44,11 @@ public class StreamPractice {
     }
 }
 
-
 class Fruit {
     String name;
     int quantity;
 
-    public Fruit (String name) {
+    public Fruit(String name) {
         this.name = name;
         this.quantity = new Random().nextInt(100) + 1;
     }

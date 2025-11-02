@@ -3,7 +3,6 @@ package Practice;
 import java.util.Map;
 import java.util.HashMap;
 
-
 // Map 자료형을 활용해 무지개 색상 출력. 
 public class MapPractice {
     public static void main(String[] args) {
