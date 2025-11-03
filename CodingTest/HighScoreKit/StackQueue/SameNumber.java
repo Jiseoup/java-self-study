@@ -8,19 +8,17 @@ public class SameNumber {
     public static void main(String[] args) {
         // Examples
         List<TestCase> testCases = List.of(
-            new TestCase(new int[] {1,1,3,3,0,1,1}),
-            new TestCase(new int[] {4,4,4,3,3})
-        );
+                new TestCase(new int[] { 1, 1, 3, 3, 0, 1, 1 }),
+                new TestCase(new int[] { 4, 4, 4, 3, 3 }));
 
         // Solutions
         Solution sol = new Solution();
         for (TestCase t : testCases) {
-            LinkedList<Integer> result = sol.solution(t.arr);
-            System.out.println(result);
+            int[] result = sol.solution(t.arr);
+            System.out.println(Arrays.toString(result));
         }
     }
 }
-
 
 // Create TestCase
 class TestCase {
@@ -31,18 +29,41 @@ class TestCase {
     }
 }
 
-
+// Solution 1. (Review)
 class Solution {
-    public LinkedList<Integer> solution(int[] arr) {
-        LinkedList<Integer> list = new LinkedList<Integer>();
+    public int[] solution(int[] arr) {
+        LinkedList<Integer> list = new LinkedList<>();
 
-        for (int i = 0; i < arr.length; i++) {
-            if (i == 0) {
-                list.add(arr[i]);
-                continue;
+        // Initialize the list.
+        for (int a : arr) {
+            if (list.isEmpty() || a != list.getLast()) {
+                list.add(a);
             }
-            if (list.peekLast() != arr[i]) list.add(arr[i]);
         }
-        return list;
+
+        int idx = 0;
+        int[] answer = new int[list.size()];
+        for (Integer num : list) {
+            answer[idx++] = num;
+        }
+
+        return answer;
     }
 }
+
+// // Solution 2.
+// class Solution {
+//     public LinkedList<Integer> solution(int[] arr) {
+//         LinkedList<Integer> list = new LinkedList<Integer>();
+
+//         for (int i = 0; i < arr.length; i++) {
+//             if (i == 0) {
+//                 list.add(arr[i]);
+//                 continue;
+//             }
+//             if (list.peekLast() != arr[i])
+//                 list.add(arr[i]);
+//         }
+//         return list;
+//     }
+// }
