@@ -19,7 +19,7 @@ public class StreamPractice {
         }
 
         // Create and Initialize fruit list.
-        List<Fruit> fruitList = new ArrayList<Fruit>();
+        List<Fruit> fruitList = new ArrayList<>();
         Fruit.initialize(fruitList);
 
         // Print all fruits.

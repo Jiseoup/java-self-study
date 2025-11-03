@@ -1,13 +1,13 @@
 package Practice;
 
-import java.util.Map;
 import java.util.HashMap;
+import java.util.Map;
 
 // Map 자료형을 활용해 무지개 색상 출력. 
 public class MapPractice {
     public static void main(String[] args) {
         // Create HashMap.
-        Map<Integer, String> rainbowColors = new HashMap<Integer, String>();
+        Map<Integer, String> rainbowColors = new HashMap<>();
 
         // Put Key-Value into the `rainbowColors` HashMap.
         rainbowColors.put(0, "Red");
